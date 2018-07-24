@@ -118,7 +118,7 @@ func (l *Writer) Write(data []byte) (int, error) {
 
 // Emit emits the message.
 func (l *Writer) Emit(level Level, timestamp time.Time, format string, args ...interface{}) {
-	fmt.Fprintf(l, format, args...)
+	// fmt.Fprintf(l, format, args...)
 }
 
 // MultiEmitter is an emitter that emits to multiple Emitters.
